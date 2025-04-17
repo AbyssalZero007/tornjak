@@ -670,7 +670,7 @@ minikube start
 
 <details><summary><b>Troubleshooting Tips: Checking Logs</b></summary>
 
-If something isn’t working, the first thing you should do is check the logs. Logs tell you what’s going wrong, so you don’t have to guess. To see what SPIRE is doing, run:
+If something isn’t working, the first thing you should do is check the logs. Logs tell you what’s going wrong, so you don’t have to guess. To see what Tornjak is doing, run:
 
 ```console
 kubectl logs -n spire -c tornjak-backend spire-server-0
