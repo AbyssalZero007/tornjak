@@ -667,3 +667,25 @@ minikube delete
 minikube start
 ```
 </details>
+
+<details><summary><b>Troubleshooting Tips: Checking Logs</b></summary>
+
+If something isn’t working, the first thing you should do is check the logs. Logs tell you what’s going wrong, so you don’t have to guess. To see what SPIRE is doing, run:
+
+```console
+kubectl logs -n spire -c tornjak-backend spire-server-0
+```
+
+To check specific agents, use:
+```console
+kubectl logs -n spire -l app=spire-agent
+```
+
+Finally, If a pod is stuck or keeps crashing, try running:
+
+```console
+kubectl describe pod <pod-name>
+```
+
+This will give you more details about what’s happening. Checking logs is usually the fastest way to figure out what’s broken.
+</details>
